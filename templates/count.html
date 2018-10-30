@@ -1,0 +1,19 @@
+<h1>I am counting the following... </h1>
+<br><br>
+<a href="{% url 'hello' %}">Take me back home</a>
+<br><br>
+{{SentText}}
+<br><br>
+{{LenText}}
+<br><br>
+{{wordDict}}
+<br><br>
+<h1>Occurences</h1>
+<table border=1>
+{%for word in wordList%}
+  <tr>
+    <td>{{word.0}}</td>
+    <td>{{word.1}}</td>
+  </tr>
+{%endfor%}
+</table>
